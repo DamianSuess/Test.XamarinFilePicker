@@ -1,5 +1,5 @@
 # Xamarin File Picker Example
-Example using the multiplatform FilePicker plugin with Xamarin.Forms and Prism.
+Example using the multiplatform FilePicker plugin with Xamarin.Forms and Prism for Android and Windows UWP.
 
 ## Permissions
 ### Android
