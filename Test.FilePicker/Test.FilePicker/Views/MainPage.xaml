@@ -4,8 +4,25 @@
              x:Class="Test.FilePicker.Views.MainPage"
              Title="{Binding Title}">
 
-  <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-    <Label Text="Welcome to Xamarin Forms and Prism!" />
-  </StackLayout>
+  <StackLayout Margin="10,10"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="StartAndExpand">
+    <Button Command="{Binding CmdSelectFileAny}" Text="Select any file..." />
+    <Button Command="{Binding CmdSelectFileImage}" Text="Select image..." />
 
+    <StackLayout Orientation="Horizontal">
+      <Label Text="File:" />
+      <Label Text="{Binding SelectedFileName}" />
+    </StackLayout>
+
+    <StackLayout Orientation="Horizontal">
+      <Label Text="Path:" />
+      <Label Text="{Binding SelectedFilePath}" />
+    </StackLayout>
+
+    <Image HorizontalOptions="Center"
+           Source="{Binding SelectedImage}"
+           VerticalOptions="Center" />
+
+  </StackLayout>
 </ContentPage>
